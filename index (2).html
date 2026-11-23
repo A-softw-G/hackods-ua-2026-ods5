@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Red Segura VES</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Etapa 2: sin estilos a propósito. El diseño llega en la Etapa 3. -->
+  <button id="btn-salida" type="button">Salir rápido</button>
+
+  <h1>Apoyo seguro en Villa El Salvador</h1>
+
+  <h2>1. Encuentra ayuda</h2>
+  <form id="form-triaje">
+    <p>
+      <label for="peligro">¿Estás en peligro ahora mismo?</label><br>
+      <select id="peligro" required>
+        <option value="">Elige una opción</option>
+        <option value="inmediato">Sí, ahora mismo</option>
+        <option value="reciente">Hubo violencia reciente o temo que ocurra pronto</option>
+        <option value="ninguno">No hay peligro inmediato</option>
+      </select>
+    </p>
+    <p>
+      <label for="apoyo">¿Qué tipo de apoyo necesitas?</label><br>
+      <select id="apoyo" required>
+        <option value="">Elige una opción</option>
+        <option value="psicologico">Apoyo psicológico</option>
+        <option value="legal">Orientación legal</option>
+        <option value="emergencia">Protección inmediata (policía o serenazgo)</option>
+      </select>
+    </p>
+    <p>
+      <label for="sector">¿En qué sector de VES estás?</label><br>
+      <select id="sector" required>
+        <option value="">Elige una opción</option>
+        <!-- Las opciones de sector las agrega app.js -->
+      </select>
+    </p>
+    <button type="submit">Ver ayuda y generar mi código</button>
+  </form>
+  <div id="resultado" aria-live="polite"></div>
+
+  <h2>2. Consulta tu caso</h2>
+  <form id="form-consulta">
+    <label for="codigo">Tu código (ejemplo: VES-1234)</label>
+    <input id="codigo" required maxlength="8" autocomplete="off">
+    <button type="submit">Consultar mi caso</button>
+  </form>
+  <div id="estado-caso" aria-live="polite"></div>
+</body>
+</html>
