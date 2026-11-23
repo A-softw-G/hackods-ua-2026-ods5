@@ -13,9 +13,8 @@ Canal digital seguro, anónimo y de acceso rápido que permite a personas en sit
 3. **Derivación inteligente:** Entrega de código anónimo de seguimiento y directorio geolocalizado con los centros de atención reales en VES (CEM, Línea 100, centros de salud).
 
 ## 🛠️ Arquitectura y Tecnologías
-* **Frontend:** [Ej. HTML/CSS/JS o React]
-* **Backend / Lógica:** [Ej. Node.js / Python / JSON local]
-* **Datos:** Directorio oficial de servicios de atención en Villa El Salvador.
+* **Frontend y Lógica (100% desde cero):** HTML5, CSS3 y JavaScript (Vanilla JS).
+* **Almacenamiento:** LocalStorage / JSON local con datos reales de atención en Villa El Salvador.
 
 ## 👥 Equipo y Roles
 * **[Sebastian Mio]:** Lógica Core y Datos de VES
