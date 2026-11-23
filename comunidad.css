@@ -1,0 +1,59 @@
+/* Red Segura VES — extensión visual para comunidad. No modifica styles.css. */
+.rsv-public{background:#fff}
+.rsv-section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:26px}
+.rsv-section-heading p{max-width:670px;color:var(--muted);margin-top:15px}
+.rsv-total{flex:none;color:var(--navy);font:600 clamp(2.8rem,6vw,4.6rem)/1 Georgia,serif;text-align:right;min-width:130px}
+.rsv-total small{display:block;font:500 .72rem/1.5 system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.rsv-estado,.rsv-disclaimer{font-size:.9rem;color:var(--muted)}
+.rsv-estado:empty{display:none}
+.rsv-barras{display:grid;gap:25px;max-width:960px;margin:25px 0 14px}
+.rsv-line-title{display:flex;justify-content:space-between;gap:12px;font-size:.95rem;color:var(--navy);font-weight:650;margin-bottom:8px}
+.rsv-line-value{font-variant-numeric:tabular-nums}
+.rsv-line-track{height:12px;background:#e9efee;overflow:hidden}
+.rsv-line-fill{height:100%;background:var(--teal);transition:width .25s ease}
+.rsv-line:nth-child(2) .rsv-line-fill{background:#44798d}
+.rsv-line:nth-child(3) .rsv-line-fill{background:#738c97}
+.rsv-disclaimer{max-width:780px;margin-top:22px}
+.rsv-two-column{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(35px,6vw,100px)}
+.rsv-two-column>div>p{margin-top:14px;color:var(--muted)}
+.rsv-history{background:#f5f8f7;border-block:1px solid var(--line)}
+.rsv-month-list{border-top:1px solid var(--line)}
+.rsv-month{border-bottom:1px solid var(--line);padding:21px 0}
+.rsv-month-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.rsv-month h3{font-size:1.06rem}
+.rsv-month-total{font-weight:700;color:var(--teal-dark);font-size:.86rem}
+.rsv-month p{font-size:.9rem;color:var(--muted)}
+.rsv-review-list{display:grid;gap:0;margin-top:24px}
+.rsv-review{border-top:1px solid var(--line);padding:19px 0}
+.rsv-review:last-child{border-bottom:1px solid var(--line)}
+.rsv-review-header{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:9px}
+.rsv-review-header strong{font-size:.88rem;color:var(--navy)}
+.rsv-stars{font-size:.82rem;letter-spacing:.09em;color:#81682c}
+.rsv-review p{font-size:.94rem;line-height:1.65;overflow-wrap:anywhere}
+.rsv-feedback-form{padding:30px;border:1px solid var(--line);align-self:start;background:#fff}
+.rsv-feedback-form h3{font-size:1.5rem;margin-bottom:12px}
+.rsv-feedback-form form{display:grid;gap:13px;margin-top:18px}
+.rsv-feedback-form label:not(.rsv-consent){font-size:.88rem;font-weight:700;color:var(--navy)}
+.rsv-feedback-form textarea,.rsv-feedback-form select{width:100%;padding:11px;border:1px solid #bacacc;border-radius:3px;background:#fff;color:var(--ink)}
+.rsv-feedback-form textarea{resize:vertical;min-height:120px}
+.rsv-feedback-form select{height:46px}
+.rsv-feedback-form button{justify-self:start}
+.rsv-consent{display:flex;align-items:start;gap:11px;font-size:.84rem;line-height:1.5;cursor:pointer}
+.rsv-consent input{margin-top:4px;flex:none}
+.rsv-info-last{padding:27px 0;background:var(--mint);font-size:.88rem}
+.rsv-info-last p{max-width:1000px}
+.rsv-demo-flag{padding:14px 18px;background:#fff3db;border-left:4px solid #a67917;color:#694b11;margin-bottom:30px}
+.rsv-no-data{padding:18px 0;color:var(--muted)}
+.rsv-optin{border-top:1px solid var(--line);margin-top:30px;padding-top:22px;max-width:650px}
+.rsv-optin h3{font-size:1.1rem;margin-bottom:8px}
+.rsv-optin p{font-size:.86rem;color:var(--muted);margin:0 0 12px}
+.rsv-optin .rsv-consent{margin-bottom:12px}
+.rsv-optin .rsv-estado{margin-top:9px}
+@media (max-width:750px){
+  .rsv-section-heading{display:block}
+  .rsv-total{text-align:left;margin-top:24px;min-width:0}
+  .rsv-two-column{grid-template-columns:1fr;gap:30px}
+  .rsv-feedback-form{padding:22px}
+  .rsv-public,.rsv-history,.rsv-reviews{padding-top:55px;padding-bottom:55px}
+}
+@media (prefers-reduced-motion:reduce){.rsv-line-fill{transition:none}}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16324F">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Orientación gratuita, discreta y responsable ante la violencia en Villa El Salvador, Lima.">
+  <title>Buscar ayuda | Red Segura VES</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="datos.ves.js" defer></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="comunidad.css">
+  <script src="comunidad-config.js" defer></script>
+  <script src="comunidad-api.js" defer></script>
+  <script src="comunidad-optin.js" defer></script>
+</head>
+<body data-page="ayuda">
+<a class="skip-link" href="#principal">Saltar al contenido</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Red Segura VES, inicio">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 32" fill="none"><path d="M14 2 25 6v9c0 7.1-4.7 12.2-11 15C7.7 27.2 3 22.1 3 15V6L14 2Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m8.8 16 3.5 3.5 7-7.5" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="brand-name">Red Segura <strong>VES</strong><small>Villa El Salvador · Lima</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="index.html" >Inicio</a><a href="ayuda.html" aria-current=page>Buscar ayuda</a><a href="emergencia.html" >Emergencias</a><a href="instituciones.html" >Instituciones</a><a href="comunidad.html">Comunidad</a><a href="consultar.html" >Consultar código</a><a href="sobre.html" >Sobre el proyecto</a></nav>
+    <button class="quick-exit" id="salida-rapida" type="button" aria-keyshortcuts="Alt+X" title="Salir de este sitio (Alt + X)">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4m6-4 4-4-4-4m4 4H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Salida rápida</span>
+    </button>
+  </div>
+</header>
+<main id="principal"><header class="page-head"><div class="container"><span class="section-kicker">ORIENTACIÓN PRIVADA</span><h1>Encuentra el apoyo<br>que necesitas.</h1><p>Una pregunta a la vez. Si hay peligro inmediato, puedes ver los contactos urgentes en el primer paso.</p></div></header>
+<section aria-labelledby="wizard-titulo" class="wizard-section section-spacing" id="buscar-ayuda">
+<div class="container wizard-layout">
+<div class="section-intro">
+<span class="section-kicker">ORIENTACIÓN PERSONALIZADA</span>
+<h2 id="wizard-titulo">Encontrar ayuda puede ser más sencillo.</h2>
+<p>Responde con tranquilidad. No pediremos datos personales ni guardaremos tus respuestas.</p>
+<div class="side-tip"><strong>¿Necesitas actuar ahora?</strong><p>Puedes llamar sin completar la evaluación.</p><a href="emergencia.html">Ver teléfonos de emergencia <span aria-hidden="true">→</span></a></div>
+</div>
+<div class="wizard-card">
+<div class="wizard-top"><span class="wizard-overline">TU RUTA DE APOYO</span><span class="wizard-progress-label" id="progreso-texto">Paso 1 de 3</span></div>
+<div aria-label="Progreso de la evaluación" aria-valuemax="3" aria-valuemin="1" aria-valuenow="1" class="progress-track" id="barra-progreso" role="progressbar"><span id="progreso-relleno"></span></div>
+<form id="form-evaluacion" novalidate="">
+<fieldset class="question-step" id="paso-1">
+<legend>¿Estás en peligro ahora mismo?</legend>
+<p class="question-help">Si es una emergencia, te mostraremos los contactos inmediatamente.</p>
+<div class="option-list">
+<label class="option"><input name="riesgo" type="radio" value="inmediato"/><span aria-hidden="true" class="radio-ui"></span><span>Sí, estoy en peligro inmediato.</span></label>
+<label class="option"><input name="riesgo" type="radio" value="reciente"/><span aria-hidden="true" class="radio-ui"></span><span>Hubo violencia recientemente o temo que ocurra pronto.</span></label>
+<label class="option"><input name="riesgo" type="radio" value="no-inmediato"/><span aria-hidden="true" class="radio-ui"></span><span>No estoy en peligro inmediato.</span></label>
+</div>
+</fieldset>
+<fieldset class="question-step" hidden="" id="paso-2">
+<legend>¿Qué tipo de ayuda necesitas?</legend>
+<p class="question-help">Elige la opción que más te serviría ahora.</p>
+<div class="option-list">
+<label class="option"><input name="ayuda" type="radio" value="psicologica"/><span aria-hidden="true" class="radio-ui"></span><span>Apoyo psicológico</span></label>
+<label class="option"><input name="ayuda" type="radio" value="legal"/><span aria-hidden="true" class="radio-ui"></span><span>Orientación legal</span></label>
+<label class="option"><input name="ayuda" type="radio" value="proteccion"/><span aria-hidden="true" class="radio-ui"></span><span>Protección o auxilio de emergencia</span></label>
+</div>
+</fieldset>
+<fieldset class="question-step" hidden="" id="paso-3">
+<legend>¿En qué zona de Villa El Salvador te encuentras?</legend>
+<p class="question-help">Solo una zona general. No necesitamos tu dirección. La zona sirve para ordenar opciones, no para determinar cobertura oficial.</p>
+<div class="option-list">
+<label class="option"><input name="sector" type="radio" value="sector-2"/><span aria-hidden="true" class="radio-ui"></span><span>Sector 2</span></label>
+<label class="option"><input name="sector" type="radio" value="sector-6"/><span aria-hidden="true" class="radio-ui"></span><span>Sector 6</span></label>
+<label class="option"><input name="sector" type="radio" value="sector-10"/><span aria-hidden="true" class="radio-ui"></span><span>Sector 10</span></label>
+<label class="option"><input name="sector" type="radio" value="otro"/><span aria-hidden="true" class="radio-ui"></span><span>Otra zona de Villa El Salvador</span></label>
+<label class="option"><input name="sector" type="radio" value="desconocido"/><span aria-hidden="true" class="radio-ui"></span><span>No estoy seguro de mi sector</span></label>
+</div>
+</fieldset>
+<div class="inline-emergency" hidden="" id="alerta-inmediata" role="alert" tabindex="-1">
+<strong>Hay ayuda disponible ahora.</strong>
+<p>Si estás en peligro inmediato, llama directamente. No necesitas terminar las preguntas.</p>
+<div class="alert-links"><a href="tel:105">Llamar al 105</a><a href="tel:100">Llamar al 100</a></div>
+</div>
+<p class="form-error" hidden="" id="error-evaluacion" role="alert"></p>
+<div class="wizard-actions">
+<button class="button button-outline" hidden="" id="btn-volver" type="button">← Volver</button>
+<button class="button button-primary" id="btn-continuar" type="submit">Continuar <span aria-hidden="true">→</span></button>
+</div>
+</form>
+<p class="wizard-footer">Privado por defecto: tus respuestas no se guardan en el navegador.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="resultados-titulo" class="results-section section-spacing" hidden="" id="resultados">
+<div class="container">
+<div class="results-top"><div><span class="section-kicker">TU ORIENTACIÓN</span><h2 id="resultados-titulo">Opciones de ayuda para ti</h2><p class="section-description" id="resultados-resumen"></p></div><button class="button button-outline" id="reiniciar-evaluacion" type="button">Nueva evaluación</button></div>
+<div aria-live="polite" class="directory-grid" id="resultados-tarjetas"></div>
+<div class="save-panel" id="panel-guardar">
+<div><h3>¿Deseas guardar estas recomendaciones?</h3><p>Solo si lo eliges, se guardarán los identificadores de los servicios y la fecha en <strong>este navegador</strong>, no tus respuestas.</p><p class="save-warning">Si compartes este dispositivo, otra persona con acceso al navegador podría encontrar los registros guardados.</p></div>
+<div class="save-actions"><button class="button button-primary" id="guardar-codigo" type="button">Guardar y generar código</button><button class="button button-outline" id="no-guardar" type="button">Continuar sin guardar</button></div>
+<div aria-live="polite" class="save-feedback" hidden="" id="guardar-mensaje" role="status"></div>
+</div>
+</div>
+</section></main>
+<footer class="site-footer">
+ <div class="container footer-content">
+  <div class="footer-main"><span class="footer-brand">Red Segura VES</span>
+   <p>Orientación para encontrar ayuda, sin solicitar datos de identidad.</p>
+   <p>HackODS UA 2026 · ODS 5 — Igualdad de Género<br>Villa El Salvador, Lima, Perú.</p>
+   <a href="sobre.html#privacidad">Privacidad y limitaciones del proyecto</a>
+  </div>
+  <div class="footer-team"><h2>Proyecto académico</h2><p>Sebastián Mio Villarreal — Lógica y directorio</p><p>Andy Guerra Mejia — Interfaz e integración</p><p>Joseph Abril Gonzales — Documentación, pruebas y presentación</p></div>
+ </div>
+ <div class="container footer-bottom"><span>No somos un servicio oficial de emergencia ni registramos denuncias.</span><span>Fotografías referenciales · Fuente de servicios: entidades oficiales.</span></div>
+</footer>
+<div id="anuncios-accesibles" class="sr-only" role="status" aria-live="polite"></div>
+</body></html>
