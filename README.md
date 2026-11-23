@@ -1,4 +1,4 @@
-# Red Segura VES — versión multipágina (HackODS UA 2026)
+# Red Segura VES — (HackODS UA 2026)
 
 ## 1. ¿Qué es?
 Red Segura VES es un **prototipo académico** de orientación ante la violencia en Villa El Salvador, Lima, Perú, alineado con el **ODS 5 — Igualdad de Género**. Ayuda a encontrar información institucional y teléfonos de contacto sin solicitar nombre, DNI ni ubicación precisa. **No recibe denuncias, no presta atención de emergencias ni confirma disponibilidad en tiempo real.**
