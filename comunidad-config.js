@@ -3,6 +3,6 @@
    No incluyas datos de usuarios en este archivo.
 */
 window.RSV_COMUNIDAD_CONFIG = {
-  url: "https://TU_PROYECTO.supabase.co",
-  publishableKey: "sb_publishable_REEMPLAZAR_AQUI"
+  url: "https://puhrijkeqshzmcnzzpik.supabase.co",
+  publishableKey: "sb_publishable_JaoGPB_zhnL2JR2slyLDaA_tiCLn3gO"
 };
