@@ -1,4 +1,4 @@
-# 🛡️ [Nombre de tu Proyecto] - HackODS UA 2026
+# 🛡️ [Prevención de violencia] - HackODS UA 2026
 
 ## 🎯 Desafío y ODS
 * **ODS 5: Igualdad de Género** – Prevención y atención de la violencia contra la mujer e integrantes del grupo familiar.
